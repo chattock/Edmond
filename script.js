@@ -20,16 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
         yearlyIframe.src = `Bar_Chart/${selectedYear}.html`;
     });
 
-    // Adjust iframe height after loading content
+    // Adjust iframe height periodically
     const adjustIframeHeight = (iframe) => {
-        iframe.onload = function() {
+        setInterval(() => {
             try {
-                const iframeContent = iframe.contentWindow.document.documentElement.scrollHeight;
+                const iframeContent = iframe.contentWindow.document.body.scrollHeight;
                 iframe.style.height = iframeContent + 'px';
             } catch (e) {
                 console.error("Error adjusting iframe height: ", e);
             }
-        };
+        }, 1000); // Adjust the interval as needed
     };
 
     adjustIframeHeight(yearlyIframe);
