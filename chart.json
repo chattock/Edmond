@@ -1,0 +1,360 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-8ac4e3c55adac1f95836c2f0f47c32a8"
+  },
+  "datasets": {
+    "data-8ac4e3c55adac1f95836c2f0f47c32a8": [
+      {
+        "Country": "Africa",
+        "CountryOrder": 0,
+        "Export": 78044,
+        "Year": 1699
+      },
+      {
+        "Country": "Asia",
+        "CountryOrder": 1,
+        "Export": -526166,
+        "Year": 1699
+      },
+      {
+        "Country": "Ireland",
+        "CountryOrder": 2,
+        "Export": -147075,
+        "Year": 1699
+      },
+      {
+        "Country": "Channel Islands",
+        "CountryOrder": 3,
+        "Export": 2961,
+        "Year": 1699
+      },
+      {
+        "Country": "Denmark",
+        "CountryOrder": 4,
+        "Export": -48941,
+        "Year": 1699
+      },
+      {
+        "Country": "Sweden",
+        "CountryOrder": 5,
+        "Export": -188213,
+        "Year": 1699
+      },
+      {
+        "Country": "East Country",
+        "CountryOrder": 6,
+        "Export": -58815,
+        "Year": 1699
+      },
+      {
+        "Country": "Russia",
+        "CountryOrder": 7,
+        "Export": -40779,
+        "Year": 1699
+      },
+      {
+        "Country": "Germany",
+        "CountryOrder": 8,
+        "Export": -117318,
+        "Year": 1699
+      },
+      {
+        "Country": "Holland",
+        "CountryOrder": 9,
+        "Export": 943505,
+        "Year": 1699
+      },
+      {
+        "Country": "Flanders",
+        "CountryOrder": 10,
+        "Export": 173957,
+        "Year": 1699
+      },
+      {
+        "Country": "France",
+        "CountryOrder": 11,
+        "Export": 27240,
+        "Year": 1699
+      },
+      {
+        "Country": "Spain",
+        "CountryOrder": 12,
+        "Export": 105998,
+        "Year": 1699
+      },
+      {
+        "Country": "Canary Islands",
+        "CountryOrder": 13,
+        "Export": -48306,
+        "Year": 1699
+      },
+      {
+        "Country": "Portugal",
+        "CountryOrder": 14,
+        "Export": 173512,
+        "Year": 1699
+      },
+      {
+        "Country": "Madeira",
+        "CountryOrder": 15,
+        "Export": 5443,
+        "Year": 1699
+      },
+      {
+        "Country": "The Straits",
+        "CountryOrder": 16,
+        "Export": 409317,
+        "Year": 1699
+      },
+      {
+        "Country": "Italy",
+        "CountryOrder": 17,
+        "Export": -258641,
+        "Year": 1699
+      },
+      {
+        "Country": "Venice",
+        "CountryOrder": 18,
+        "Export": -16011,
+        "Year": 1699
+      },
+      {
+        "Country": "Turkey",
+        "CountryOrder": 19,
+        "Export": -32457,
+        "Year": 1699
+      },
+      {
+        "Country": "Canada",
+        "CountryOrder": 20,
+        "Export": -1030,
+        "Year": 1699
+      },
+      {
+        "Country": "New England",
+        "CountryOrder": 21,
+        "Export": 100620,
+        "Year": 1699
+      },
+      {
+        "Country": "New York",
+        "CountryOrder": 22,
+        "Export": 25973,
+        "Year": 1699
+      },
+      {
+        "Country": "Pennsylvania",
+        "CountryOrder": 23,
+        "Export": 15586,
+        "Year": 1699
+      },
+      {
+        "Country": "Virginia",
+        "CountryOrder": 24,
+        "Export": 6963,
+        "Year": 1699
+      },
+      {
+        "Country": "Carolina",
+        "CountryOrder": 25,
+        "Export": -918,
+        "Year": 1699
+      },
+      {
+        "Country": "Georgia",
+        "CountryOrder": 26,
+        "Export": 0,
+        "Year": 1699
+      },
+      {
+        "Country": "Florida",
+        "CountryOrder": 27,
+        "Export": 0,
+        "Year": 1699
+      },
+      {
+        "Country": "New Providence",
+        "CountryOrder": 28,
+        "Export": 306,
+        "Year": 1699
+      },
+      {
+        "Country": "Bermuda",
+        "CountryOrder": 29,
+        "Export": 1170,
+        "Year": 1699
+      },
+      {
+        "Country": "Jamaica",
+        "CountryOrder": 30,
+        "Export": -38112,
+        "Year": 1699
+      },
+      {
+        "Country": "Leeward Islands",
+        "CountryOrder": 31,
+        "Export": -153441,
+        "Year": 1699
+      },
+      {
+        "Country": "Windward Islands",
+        "CountryOrder": 32,
+        "Export": -93175,
+        "Year": 1699
+      },
+      {
+        "Country": "Other British Caribbean",
+        "CountryOrder": 33,
+        "Export": 0,
+        "Year": 1699
+      },
+      {
+        "Country": "Spanish Caribbean",
+        "CountryOrder": 34,
+        "Export": 0,
+        "Year": 1699
+      },
+      {
+        "Country": "Prize Goods",
+        "CountryOrder": 35,
+        "Export": -5987,
+        "Year": 1699
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "Country",
+      "legend": {
+        "columns": 1,
+        "labelFontSize": 12,
+        "legendY": 0,
+        "orient": "right",
+        "symbolLimit": 0,
+        "title": "Country",
+        "titleFontSize": 14
+      },
+      "scale": {
+        "domain": [
+          "Africa",
+          "Asia",
+          "Ireland",
+          "Channel Islands",
+          "Denmark",
+          "Sweden",
+          "East Country",
+          "Russia",
+          "Germany",
+          "Holland",
+          "Flanders",
+          "France",
+          "Spain",
+          "Canary Islands",
+          "Portugal",
+          "Madeira",
+          "The Straits",
+          "Italy",
+          "Venice",
+          "Turkey",
+          "Canada",
+          "New England",
+          "New York",
+          "Pennsylvania",
+          "Virginia",
+          "Carolina",
+          "Georgia",
+          "Florida",
+          "New Providence",
+          "Bermuda",
+          "Jamaica",
+          "Leeward Islands",
+          "Windward Islands",
+          "Other British Caribbean",
+          "Spanish Caribbean",
+          "Prize Goods"
+        ],
+        "range": [
+          "#f9844a",
+          "#f9c74f",
+          "#43aa8b",
+          "#44ac8c",
+          "#45ae8d",
+          "#46b08e",
+          "#47b28f",
+          "#48b490",
+          "#49b691",
+          "#4ab892",
+          "#4bbc94",
+          "#4cbc95",
+          "#4ebd96",
+          "#4fc197",
+          "#50c298",
+          "#51c499",
+          "#52c69a",
+          "#53ca9b",
+          "#54cb9c",
+          "#55cd9d",
+          "#4d908e",
+          "#568f91",
+          "#5f8e94",
+          "#688d97",
+          "#718c9a",
+          "#7a8b9d",
+          "#838aa0",
+          "#8c89a3",
+          "#9588a6",
+          "#9e87a9",
+          "#ffc6c1",
+          "#ffb6c1",
+          "#ffa6c1",
+          "#ff96c1",
+          "#ff86c1",
+          "#277da1"
+        ]
+      },
+      "type": "nominal"
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "title": "Country",
+        "type": "nominal"
+      },
+      {
+        "field": "Export",
+        "title": "Export Value",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "title": "Country"
+      },
+      "field": "Country",
+      "sort": {
+        "field": "CountryOrder",
+        "order": "ascending"
+      },
+      "type": "nominal"
+    },
+    "y": {
+      "axis": {
+        "title": "Export Value"
+      },
+      "field": "Export",
+      "type": "quantitative"
+    }
+  },
+  "mark": {
+    "type": "bar"
+  },
+  "title": "Net Trade for the Year 1699",
+  "width": 800
+}
