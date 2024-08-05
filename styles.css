@@ -117,6 +117,7 @@ footer a {
     header, footer {
         transform: scaleX(2); /* Scale the header and footer width by 2 */
         transform-origin: top left;
+        min-width: 500px;
     }
     header h1, header nav a, footer * {
         transform: scaleX(0.5); /* Scale the font width back to normal */
