@@ -106,7 +106,7 @@ footer a {
 }
 
 /* Ensure the page zooms out to fit 800px width on smaller screens */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     html {
         height: 50vh
       }
