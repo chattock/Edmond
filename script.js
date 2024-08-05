@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (e) {
                 console.error("Error adjusting iframe height: ", e);
             }
-        }, 1000); // Adjust the interval as needed
+        }, 1000); // Add closing parenthesis here and set interval time
     };
-
+    
     adjustIframeHeight(yearlyIframe);
     adjustIframeHeight(notebookIframe);
 });
