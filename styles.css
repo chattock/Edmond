@@ -105,34 +105,34 @@ footer a {
     min-width: 900px;
 }
 
-/* Ensure the page zooms out to fit 800px width on smaller screens */
-@media (max-width: 600px) {
+/* Improvements for better performance on mobile devices */
+@media (max-width: 480px) {
     html {
         height: 50vh
       }
     body {
-        transform: scale(0.50); /* Adjust the scale factor as needed */
+        transform: scale(0.6);
         transform-origin: top left;
     }
     header, footer {
-        transform: scaleX(2); /* Scale the header and footer width by 2 */
+        transform: scaleX(1.67);
         transform-origin: top left;
-        min-width: 480px;
+        min-width: 580px;
     }
     header h1, header nav a, footer * {
-        transform: scaleX(0.5); /* Scale the font width back to normal */
-        display: inline-block; /* Ensure the transform applies correctly */
+        transform: scaleX(0.6);
+        display: inline-block;
     }
     header nav ul {
-        transform: scaleX(0.5); /* Scale the ul width back to normal */
-        display: inline-block; /* Ensure the transform applies correctly */
-        margin: 0; /* Reset margin */
-        padding: 0; /* Reset padding */
+        transform: scaleX(0.6);
+        display: inline-block;
+        margin: 0;
+        padding: 0;
     }
     header nav li {
-        display: inline-block; /* Ensure list items are inline */
-        margin-right: 1em; /* Adjust spacing as needed */
-        transform: scaleX(2); /* Scale the list item width back to normal */
-        transform-origin: left; /* Ensure scaling applies from the left */
+        display: inline-block;
+        margin-right: 1em;
+        transform: scaleX(1.67);
+        transform-origin: left;
     }
 }
