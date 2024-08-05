@@ -71,7 +71,7 @@ iframe {
 #yearly-content {
     flex: 1;
     width: 100%;
-    height: calc(100vh - 200px); /* Adjust the height as needed */
+    height: 100%; /* Adjust the height as needed */
 }
 
 #yearlyIframe {
@@ -93,4 +93,12 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
+}
+
+#notebookIframe, #yearlyIframe {
+    min-width: 600px; /* Set the minimum width as desired */
+}
+
+#about, #analysis {
+    min-width: 600px;
 }
