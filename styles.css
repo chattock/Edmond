@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
@@ -21,6 +22,7 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    min-width: 1000px
 }
 
 header h1 {
@@ -71,7 +73,7 @@ iframe {
 #yearly-content {
     flex: 1;
     width: 100%;
-    height: 100%; /* Adjust the height as needed */
+    height: 100%;
 }
 
 #yearlyIframe {
@@ -96,9 +98,17 @@ footer a {
 }
 
 #notebookIframe, #yearlyIframe {
-    min-width: 600px; /* Set the minimum width as desired */
+    min-width: 800px; /* Set the minimum width as desired */
 }
 
 #about, #analysis {
-    min-width: 600px;
+    min-width: 900px;
+}
+
+/* Ensure the page zooms out to fit 800px width on smaller screens */
+@media (max-width: 800px) {
+    body {
+        transform: scale(0.50); /* Adjust the scale factor as needed */
+        transform-origin: top left;
+    }
 }
