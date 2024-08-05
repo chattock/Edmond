@@ -22,7 +22,7 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
-    width: 100%
+    width: 100%;
 }
 
 header h1 {
@@ -85,7 +85,7 @@ footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 2rem 0 1rem; /* Increased top padding */
+    padding: 2rem 0 1rem;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -98,7 +98,7 @@ footer a {
 }
 
 #notebookIframe, #yearlyIframe {
-    min-width: 800px; /* Set the minimum width as desired */
+    min-width: 800px;
 }
 
 #about, #analysis {
@@ -108,8 +108,8 @@ footer a {
 /* Improvements for better performance on mobile devices */
 @media (max-width: 480px) {
     html {
-        height: 50vh
-      }
+        height: 50vh;
+    }
     body {
         transform: scale(0.6);
         transform-origin: top left;
@@ -133,6 +133,38 @@ footer a {
         display: inline-block;
         margin-right: 1em;
         transform: scaleX(1.67);
+        transform-origin: left;
+    }
+}
+
+/* Additional media query for larger screens to avoid unnecessary scaling */
+@media (min-width: 481px) and (max-width: 800px) {
+    html {
+        height: 50vh;
+    }
+    body {
+        transform: scale(0.8);
+        transform-origin: top left;
+    }
+    header, footer {
+        transform: scaleX(1.25);
+        transform-origin: top left;
+        min-width: 640px;
+    }
+    header h1, header nav a, footer * {
+        transform: scaleX(0.8);
+        display: inline-block;
+    }
+    header nav ul {
+        transform: scaleX(0.8);
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    header nav li {
+        display: inline-block;
+        margin-right: 1em;
+        transform: scaleX(1.25);
         transform-origin: left;
     }
 }
