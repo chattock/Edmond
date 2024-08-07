@@ -26,15 +26,26 @@
         <section id="analysis">
             <h2>Analysis</h2>
             
-            <!-- Dropdown for selecting the year -->
-            <label for="year-select">Select Year:</label>
-            <select id="year-select">
+            <!-- Dropdown for selecting the year for Bar Chart -->
+            <label for="yearly-select">Select Year for Bar Chart:</label>
+            <select id="yearly-select">
                 <!-- Options will be populated by JavaScript -->
             </select>
             
             <!-- Embed the HTML content based on the selected year -->
             <div id="yearly-content">
                 <iframe id="yearlyIframe" src="Bar_Chart/1699.html"></iframe>
+            </div>
+
+            <!-- Dropdown for selecting the year for Map -->
+            <label for="map-select">Select Year for Map:</label>
+            <select id="map-select">
+                <!-- Options will be populated by JavaScript -->
+            </select>
+            
+            <!-- Embed the map content based on the selected year -->
+            <div id="map-content">
+                <iframe id="mapIframe" src="Maps/1699.html"></iframe>
             </div>
             
             <!-- Embed the Jupyter Notebook content -->

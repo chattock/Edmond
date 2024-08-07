@@ -1,23 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const yearDropdown = document.getElementById('year-select');
+    const yearlyDropdown = document.getElementById('yearly-select');
+    const mapDropdown = document.getElementById('map-select');
     const yearlyIframe = document.getElementById('yearlyIframe');
+    const mapIframe = document.getElementById('mapIframe');
     const notebookIframe = document.getElementById('notebookIframe');
 
-    // Populate the dropdown with years
+    // Populate the dropdowns with years
     for (let year = 1699; year <= 1770; year++) {
-        const option = document.createElement('option');
-        option.value = year;
-        option.textContent = year;
-        yearDropdown.appendChild(option);
+        const yearlyOption = document.createElement('option');
+        yearlyOption.value = year;
+        yearlyOption.textContent = year;
+        yearlyDropdown.appendChild(yearlyOption);
+        
+        const mapOption = document.createElement('option');
+        mapOption.value = year;
+        mapOption.textContent = year;
+        mapDropdown.appendChild(mapOption);
     }
 
     // Set default selection
-    yearDropdown.value = 1699;
+    yearlyDropdown.value = 1699;
+    mapDropdown.value = 1699;
 
-    // Update iframe src when dropdown selection changes
-    yearDropdown.addEventListener('change', (event) => {
+    // Update iframe src when yearly dropdown selection changes
+    yearlyDropdown.addEventListener('change', (event) => {
         const selectedYear = event.target.value;
         yearlyIframe.src = `Bar_Chart/${selectedYear}.html`;
+    });
+
+    // Update iframe src when map dropdown selection changes
+    mapDropdown.addEventListener('change', (event) => {
+        const selectedYear = event.target.value;
+        mapIframe.src = `Maps/${selectedYear}.html`;
     });
 
     // Adjust iframe height periodically
@@ -29,9 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (e) {
                 console.error("Error adjusting iframe height: ", e);
             }
-        }, 1000); // Add closing parenthesis here and set interval time
+        }, 1000);
     };
     
     adjustIframeHeight(yearlyIframe);
     adjustIframeHeight(notebookIframe);
+    adjustIframeHeight(mapIframe);
 });
