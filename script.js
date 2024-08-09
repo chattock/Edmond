@@ -5,17 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const mapIframe = document.getElementById('mapIframe');
     const notebookIframe = document.getElementById('notebookIframe');
 
-    // Populate the dropdowns with years
+    // Populate dropdowns with years, excluding 1705 and 1712
     for (let year = 1699; year <= 1770; year++) {
-        const yearlyOption = document.createElement('option');
-        yearlyOption.value = year;
-        yearlyOption.textContent = year;
-        yearlyDropdown.appendChild(yearlyOption);
-        
-        const mapOption = document.createElement('option');
-        mapOption.value = year;
-        mapOption.textContent = year;
-        mapDropdown.appendChild(mapOption);
+        if (year !== 1705 && year !== 1712) {
+            const yearlyOption = document.createElement('option');
+            yearlyOption.value = year;
+            yearlyOption.textContent = year;
+            yearlyDropdown.appendChild(yearlyOption);
+
+            const mapOption = document.createElement('option');
+            mapOption.value = year;
+            mapOption.textContent = year;
+            mapDropdown.appendChild(mapOption);
+        }
     }
 
     // Set default selection
