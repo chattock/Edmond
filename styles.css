@@ -3,79 +3,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    min-width: 800px;
+    gap: 3rem; /* Add space between flex children */
+  }
+  
+  header, footer {
+    background: none;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    min-width: 800px;
+  }
+  
+  header h1, footer p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem; 
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: all 300ms ease;
+  }
+  
+  nav ul li a:hover {
+    color: grey;
+    text-decoration: underline;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 800px;
+    gap: 3rem; 
+  }
+  
+  section {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: none;
+  }
 
-body {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow-x: hidden;
-  min-width: 800px;
-}
+  section h2 {
+    text-align: center;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    margin-bottom: 2rem; 
+  }
 
-header, footer {
-  background: none;
-  color: #333;
-  text-align: center;
-  padding: 1rem 0;
-  width: 100%;
-  min-width: 800px;
-}
+  section p {
+    margin-bottom: 2rem;
+    margin-left: 1rem; /* Adjust as needed */
+  }
 
-header h1, footer p {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
+  section label {
+    margin-left: 1rem; /* Adjust as needed */
+  }
 
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-nav ul li a {
-  color: #333;
-  text-decoration: none;
-  transition: all 300ms ease;
-}
-
-nav ul li a:hover {
-  color: grey;
-  text-decoration: underline;
-}
-
-main {
-  flex: 1;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  min-width: 800px;
-}
-
-section {
-  background: #fff;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-iframe {
-  width: 100%;
-  height: 500px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+  footer {
+    background: none;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    min-width: 800px;
+  }
+  
+  footer h2 {
+    font-size: 1.2rem; /* Smaller font size */
+    font-weight: 500;
+  }
+  
+  footer p {
+    font-size: 1rem; /* Smaller font size */
+    margin-bottom: 1rem; 
+    margin-top: 1rem;
+  }
+  
+  footer a {
+    color: #333; /* Match the rest of the text */
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: grey;
+    text-decoration: underline;
+  }
