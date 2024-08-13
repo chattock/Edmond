@@ -3,7 +3,7 @@
 
 @media (max-width: 480px) {
     html {
-      transform: scale(0.475);
+      transform: scale(0.48);
       transform-origin: top left;
       height: 50%;
     }
