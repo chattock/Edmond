@@ -3,7 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const mapDropdown = document.getElementById('map-select');
     const yearlyIframe = document.getElementById('yearlyIframe');
     const mapIframe = document.getElementById('mapIframe');
-    const notebookIframe = document.getElementById('notebookIframe');
+    
+    const iframes = [
+        yearlyIframe,
+        mapIframe,
+        document.querySelector('#imports iframe'),
+        document.querySelector('#exports iframe'),
+        document.querySelector('#re-exports iframe'),
+        document.querySelector('#net-trade-1 iframe'),
+        document.querySelector('#mean-net-trade iframe'),
+        document.querySelector('#net-trade iframe')
+    ];
 
     // Populate dropdowns with years, excluding 1705 and 1712
     for (let year = 1699; year <= 1770; year++) {
@@ -47,8 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 1000);
     };
-    
-    adjustIframeHeight(yearlyIframe);
-    adjustIframeHeight(notebookIframe);
-    adjustIframeHeight(mapIframe);
+
+    iframes.forEach(adjustIframeHeight);
 });
