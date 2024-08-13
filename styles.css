@@ -1,170 +1,81 @@
-/* Basic Reset */
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  min-width: 800px;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-    width: 100%;
+header, footer {
+  background: none;
+  color: #333;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  min-width: 800px;
 }
 
-header h1 {
-    margin: 0;
+header h1, footer p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+nav ul li a:hover {
+  color: grey;
+  text-decoration: underline;
 }
 
 main {
-    flex: 1;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 800px;
 }
 
 section {
-    background: #fff;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label, select {
-    display: block;
-    margin: 10px 0;
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 iframe {
-    width: 100%;
-    border: none;
-    transition: height 0.3s ease;
-}
-
-#yearly-content {
-    flex: 1;
-    width: 100%;
-    height: 100%;
-}
-
-#yearlyIframe {
-    width: 100%;
-    height: 100%;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 0 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    display: none;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-#notebookIframe, #yearlyIframe {
-    min-width: 800px;
-}
-
-#about, #analysis {
-    min-width: 900px;
-}
-
-/* Improvements for better performance on mobile devices */
-@media (max-width: 480px) {
-    html {
-        height: 50vh;
-    }
-    body {
-        transform: scale(0.6);
-        transform-origin: top left;
-    }
-    header, footer {
-        transform: scaleX(1.67);
-        transform-origin: top left;
-        min-width: 580px;
-    }
-    header h1, header nav a, footer * {
-        transform: scaleX(0.6);
-        display: inline-block;
-    }
-    header nav ul {
-        transform: scaleX(0.6);
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-    }
-    header nav li {
-        display: inline-block;
-        margin-right: 1em;
-        transform: scaleX(1.67);
-        transform-origin: left;
-    }
-}
-
-/* Additional media query for larger screens to avoid unnecessary scaling */
-@media (min-width: 481px) and (max-width: 800px) {
-    html {
-        height: 50vh;
-    }
-    body {
-        transform: scale(0.8);
-        transform-origin: top left;
-    }
-    header, footer {
-        transform: scaleX(1.25);
-        transform-origin: top left;
-        min-width: 640px;
-    }
-    header h1, header nav a, footer * {
-        transform: scaleX(0.8);
-        display: inline-block;
-    }
-    header nav ul {
-        transform: scaleX(0.8);
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-    }
-    header nav li {
-        display: inline-block;
-        margin-right: 1em;
-        transform: scaleX(1.25);
-        transform-origin: left;
-    }
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

@@ -1,0 +1,10 @@
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+    html {
+      transform: scale(0.475);
+      transform-origin: top left;
+      height: 50%;
+    }
+  }
