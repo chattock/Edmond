@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-7a0a63fffd619890bd4f47b967ab5e89"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "Country", "legend": {"columns": 1, "labelFontSize": 12, "legendY": 0, "orient": "right", "symbolLimit": 0, "title": "Country", "titleFontSize": 14}, "scale": {"domain": ["Africa", "Asia", "Ireland", "Channel Islands", "Denmark", "Sweden", "East Country", "Russia", "Germany", "Holland", "Flanders", "France", "Spain", "Canary Islands", "Portugal", "Madeira", "The Straits", "Italy", "Venice", "Turkey", "Canada", "New England", "New York", "Pennsylvania", "Virginia", "Carolina", "Georgia", "Florida", "New Providence", "Bermuda", "Jamaica", "Leeward Islands", "Windward Islands", "Other British Caribbean", "Spanish Caribbean", "Prize Goods"], "range": ["#f9844a", "#f9c74f", "#43aa8b", "#44ac8c", "#45ae8d", "#46b08e", "#47b28f", "#48b490", "#49b691", "#4ab892", "#4bba93", "#4cbc94", "#4dbe95", "#4ec096", "#4fc297", "#4fc297", "#50c498", "#51c699", "#52c89a", "#53ca9b", "#add8e6", "#b0dfee", "#b2e0f2", "#b4e3f5", "#b6e5f8", "#aedefa", "#b0f1fe", "#b2f4ff", "#b4f7ff", "#b6faff", "#ffc6c1", "#ffb6c1", "#ffa6c1", "#ff96c1", "#ff86c1", "#277da1"]}, "type": "nominal"}, "tooltip": [{"field": "Country", "title": "Country", "type": "nominal"}, {"field": "Export", "title": "Export Value", "type": "quantitative"}], "x": {"axis": {"title": "Country"}, "field": "Country", "sort": {"field": "CountryOrder", "order": "ascending"}, "type": "nominal"}, "y": {"axis": {"title": "Export Value"}, "field": "Export", "type": "quantitative"}}, "height": 500, "title": "Exports for the Year 1761", "width": "container", "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json", "datasets": {"data-7a0a63fffd619890bd4f47b967ab5e89": [{"Year": "1761-01-01T00:00:00", "Country": "Africa", "Export": 246720, "CountryOrder": 0}, {"Year": "1761-01-01T00:00:00", "Country": "Asia", "Export": 739701, "CountryOrder": 1}, {"Year": "1761-01-01T00:00:00", "Country": "Ireland", "Export": 883216, "CountryOrder": 2}, {"Year": "1761-01-01T00:00:00", "Country": "Channel Islands", "Export": 44690, "CountryOrder": 3}, {"Year": "1761-01-01T00:00:00", "Country": "Denmark", "Export": 91805, "CountryOrder": 4}, {"Year": "1761-01-01T00:00:00", "Country": "Sweden", "Export": 11720, "CountryOrder": 5}, {"Year": "1761-01-01T00:00:00", "Country": "East Country", "Export": 108150, "CountryOrder": 6}, {"Year": "1761-01-01T00:00:00", "Country": "Russia", "Export": 44314, "CountryOrder": 7}, {"Year": "1761-01-01T00:00:00", "Country": "Germany", "Export": 1066451, "CountryOrder": 8}, {"Year": "1761-01-01T00:00:00", "Country": "Holland", "Export": 1280388, "CountryOrder": 9}, {"Year": "1761-01-01T00:00:00", "Country": "Flanders", "Export": 241462, "CountryOrder": 10}, {"Year": "1761-01-01T00:00:00", "Country": "France", "Export": 1008, "CountryOrder": 11}, {"Year": "1761-01-01T00:00:00", "Country": "Spain", "Export": 1198806, "CountryOrder": 12}, {"Year": "1761-01-01T00:00:00", "Country": "Canary Islands", "Export": 63701, "CountryOrder": 13}, {"Year": "1761-01-01T00:00:00", "Country": "Portugal", "Export": 1247538, "CountryOrder": 14}, {"Year": "1761-01-01T00:00:00", "Country": "Madeira", "Export": 45859, "CountryOrder": 15}, {"Year": "1761-01-01T00:00:00", "Country": "The Straits", "Export": 280747, "CountryOrder": 16}, {"Year": "1761-01-01T00:00:00", "Country": "Italy", "Export": 189933, "CountryOrder": 17}, {"Year": "1761-01-01T00:00:00", "Country": "Venice", "Export": 21389, "CountryOrder": 18}, {"Year": "1761-01-01T00:00:00", "Country": "Turkey", "Export": 49876, "CountryOrder": 19}, {"Year": "1761-01-01T00:00:00", "Country": "Canada", "Export": 109370, "CountryOrder": 20}, {"Year": "1761-01-01T00:00:00", "Country": "New England", "Export": 296181, "CountryOrder": 21}, {"Year": "1761-01-01T00:00:00", "Country": "New York", "Export": 108080, "CountryOrder": 22}, {"Year": "1761-01-01T00:00:00", "Country": "Pennsylvania", "Export": 172699, "CountryOrder": 23}, {"Year": "1761-01-01T00:00:00", "Country": "Virginia", "Export": 506710, "CountryOrder": 24}, {"Year": "1761-01-01T00:00:00", "Country": "Carolina", "Export": 223393, "CountryOrder": 25}, {"Year": "1761-01-01T00:00:00", "Country": "Georgia", "Export": 22885, "CountryOrder": 26}, {"Year": "1761-01-01T00:00:00", "Country": "Florida", "Export": 0, "CountryOrder": 27}, {"Year": "1761-01-01T00:00:00", "Country": "New Providence", "Export": 0, "CountryOrder": 28}, {"Year": "1761-01-01T00:00:00", "Country": "Bermuda", "Export": 11542, "CountryOrder": 29}, {"Year": "1761-01-01T00:00:00", "Country": "Jamaica", "Export": 583144, "CountryOrder": 30}, {"Year": "1761-01-01T00:00:00", "Country": "Leeward Islands", "Export": 249813, "CountryOrder": 31}, {"Year": "1761-01-01T00:00:00", "Country": "Windward Islands", "Export": 189406, "CountryOrder": 32}, {"Year": "1761-01-01T00:00:00", "Country": "Other British Caribbean", "Export": 0, "CountryOrder": 33}, {"Year": "1761-01-01T00:00:00", "Country": "Spanish Caribbean", "Export": 0, "CountryOrder": 34}, {"Year": "1761-01-01T00:00:00", "Country": "Prize Goods", "Export": 0, "CountryOrder": 35}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

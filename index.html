@@ -56,10 +56,20 @@
                     <li><span style="background-color: #277da1; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Prize Goods</li>
                 </ul>
             </div>
+
             <label for="yearly-select">Select Year for Bar Chart:</label>
             <select id="yearly-select"></select>
+
+            <label for="bar-data-type-select">Select Data Type for Bar Chart:</label>
+            <select id="bar-data-type-select">
+                <option value="Net_Trade">Net Trade</option>
+                <option value="Imports">Imports</option>
+                <option value="Exports">Exports</option>
+                <option value="Re-Exports">Re-Exports</option>
+            </select>
+
             <div id="yearly-content">
-                <iframe id="yearlyIframe" src="Bar_Chart/1699.html"></iframe>
+                <iframe id="yearlyIframe" src="Bar_Chart/Net_Trade/1699.html"></iframe>
             </div>
 
             <h2>Steamgraphs of Imports, Exports and Re-exports</h2>
