@@ -25,22 +25,33 @@
         </section>
 
         <section id="analysis">
-            <h2>Analysis</h2>
-            
-            <p>Example text for the Bar Chart analysis.</p>
-            <label for="yearly-select">Select Year for Bar Chart:</label>
-            <select id="yearly-select">
-            </select>
-            <div id="yearly-content">
-                <iframe id="yearlyIframe" src="Bar_Chart/1699.html"></iframe>
-            </div>
+            <h2>Net Trade Flow Visualization</h2>
+            <p>This graph shows the net trade flow from the UK to various countries. Blue lines represent exports (positive trade), while red lines indicate imports (negative trade). The thickness and color intensity of the lines correspond to the trade value magnitude. Hover over the end of the lines to see more clearly the name of the line. The legend is interactive: if you click a country once, it removes that country. Double-clicking will highlight and isolate it from the others</p>
 
-            <p>Example text for the Map analysis.</p>
             <label for="map-select">Select Year for Map:</label>
             <select id="map-select">
             </select>
             <div id="map-content">
                 <iframe id="mapIframe" src="Maps/1699.html"></iframe>
+            </div>
+            
+            <p>Example text for the Bar Chart analysis.</p>
+            <div style="font-family: Arial, sans-serif; margin-left: 1rem; margin-bottom: 1rem;">
+                <h3>Color Key for Charts Below</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                  <li><span style="background-color: #f9844a; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Africa</li>
+                  <li><span style="background-color: #f9c74f; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Asia</li>
+                  <li><span style="background-color: #43aa8b; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Europe (various shades)</li>
+                  <li><span style="background-color: #add8e6; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Americas (various shades)</li>
+                  <li><span style="background-color: #ffc6c1; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Islands (various shades)</li>
+                  <li><span style="background-color: #277da1; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Prize Goods</li>
+                </ul>
+              </div>
+            <label for="yearly-select">Select Year for Bar Chart:</label>
+            <select id="yearly-select">
+            </select>
+            <div id="yearly-content">
+                <iframe id="yearlyIframe" src="Bar_Chart/1699.html"></iframe>
             </div>
 
             <p>Example text for the Imports graph.</p>
