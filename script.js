@@ -4,17 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const dataTypeDropdown = document.getElementById('data-type-select');
     const barDataTypeDropdown = document.getElementById('bar-data-type-select');
     const steamgraphTypeDropdown = document.getElementById('steamgraph-type-select');
+    const lineGraphTypeDropdown = document.getElementById('line-graph-type-select');
+    const lineGraphDataTypeDropdown = document.getElementById('line-graph-data-type-select');
     const yearlyIframe = document.getElementById('yearlyIframe');
     const mapIframe = document.getElementById('mapIframe');
     const steamgraphIframe = document.getElementById('steamgraphIframe');
+    const lineGraphIframe = document.getElementById('lineGraphIframe');
     
     const iframes = [
         yearlyIframe,
         mapIframe,
         steamgraphIframe,
-        document.querySelector('#net-trade-1 iframe'),
-        document.querySelector('#mean-net-trade iframe'),
-        document.querySelector('#net-trade iframe')
+        lineGraphIframe
     ];
 
     // Populate dropdowns with years, excluding 1705 and 1712
@@ -63,6 +64,16 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     steamgraphTypeDropdown.addEventListener('change', updateSteamgraphIframeSrc);
+
+    // Update line graph iframe src when type or data type changes
+    const updateLineGraphIframeSrc = () => {
+        const selectedType = lineGraphTypeDropdown.value;
+        const selectedDataType = lineGraphDataTypeDropdown.value;
+        lineGraphIframe.src = `Other Graphs/${selectedType}/${selectedDataType}.html`;
+    };
+
+    lineGraphTypeDropdown.addEventListener('change', updateLineGraphIframeSrc);
+    lineGraphDataTypeDropdown.addEventListener('change', updateLineGraphIframeSrc);
 
     // Adjust iframe height periodically
     const adjustIframeHeight = (iframe) => {
