@@ -177,3 +177,12 @@
 .btn-color-2:hover {
   border: rgb(255, 255, 255) 0.1rem solid;
 }
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  margin-bottom: 2rem;
+}

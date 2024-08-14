@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const yearlyDropdown = document.getElementById('yearly-select');
     const mapDropdown = document.getElementById('map-select');
+    const dataTypeDropdown = document.getElementById('data-type-select');
     const yearlyIframe = document.getElementById('yearlyIframe');
     const mapIframe = document.getElementById('mapIframe');
     
@@ -40,11 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
         yearlyIframe.src = `Bar_Chart/${selectedYear}.html`;
     });
 
-    // Update iframe src when map dropdown selection changes
-    mapDropdown.addEventListener('change', (event) => {
-        const selectedYear = event.target.value;
-        mapIframe.src = `Maps/${selectedYear}.html`;
-    });
+    // Update iframe src when map or data type dropdown selection changes
+    const updateMapIframeSrc = () => {
+        const selectedYear = mapDropdown.value;
+        const selectedDataType = dataTypeDropdown.value;
+        mapIframe.src = `Maps/${selectedDataType}/${selectedYear}.html`;
+    };
+
+    mapDropdown.addEventListener('change', updateMapIframeSrc);
+    dataTypeDropdown.addEventListener('change', updateMapIframeSrc);
 
     // Adjust iframe height periodically
     const adjustIframeHeight = (iframe) => {
