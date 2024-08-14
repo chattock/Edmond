@@ -22,11 +22,10 @@
     <main>
         <section id="about">
             <h2>About</h2>
-            <p>This project involves...</p>
+            <p>This project explores the detailed records of British imports and exports from 1699 to 1770. By digitizing these extensive ledgers, we provide a nuanced analysis of historical trade data, highlighting the differences in trade between the UK and specific markets globally. The aim of this website is to offer a comprehensive, accessible view of past trade dynamics, enabling users to discover unique patterns and insights. The data was collected from The <a href="https://discovery.nationalarchives.gov.uk/details/r/C5580/">National Archives</a> and can be accessed in Excel format <a href="Customs data for James.xlsx" download>here</a>.</p>
         </section>
-
         <section id="analysis">
-            <h2>Net Trade Flow Visualisation</h2>
+            <h2>Net Trade Globe Visualisation</h2>
             <p>This graph shows the net trade flow from the UK to various countries. Blue lines represent a positive trade balance, while red lines indicate a negative trade balance. The thickness and color intensity of the lines correspond to the trade value magnitude. Hover over the end of the lines to see more clearly the name of the line. The legend is interactive: if you click a country once, it removes that country. Double-clicking will highlight and isolate it from the others.</p>
 
             <label for="map-select">Select Year for Map:</label>
@@ -35,7 +34,7 @@
             <div id="map-content">
                 <iframe id="mapIframe" src="Maps/1699.html"></iframe>
             </div>
-            
+
             <h2>Net Trade Bar Chart</h2>
             <p>This bar chart displays the net trade from the UK to various countries for a selected year. Each bar represents a country, with its height indicating the export value. The colors correspond to different regions, as shown in the legend. You can hover over the bars to see detailed export values.</p>
             <div style="font-family: Arial, sans-serif; margin-left: 1rem; margin-bottom: 1rem;">
@@ -48,7 +47,7 @@
                   <li><span style="background-color: #ffc6c1; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Islands (various shades)</li>
                   <li><span style="background-color: #277da1; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Prize Goods</li>
                 </ul>
-              </div>
+            </div>
             <label for="yearly-select">Select Year for Bar Chart:</label>
             <select id="yearly-select">
             </select>
@@ -57,7 +56,7 @@
             </div>
 
             <h2>Steamgraphs of Imports, Exports and Re-exports</h2>
-            <p><p>This steamgraph visualises the import data from the UK to various countries over time. Each layer represents a country, with the height of the layer indicating the volume of imports. The graph uses colour to differentiate between regions, including Africa, Asia, Europe, the Americas, Islands, and Prize Goods. You can interact with the graph by hovering over sections to see detailed data for each year and country. Additionally, the legend is interactive, allowing you to isolate specific countries from the view when you click on them.</p></p>
+            <p>This steamgraph visualises the import data from the UK to various countries over time. Each layer represents a country, with the height of the layer indicating the volume of imports. The graph uses colour to differentiate between regions, including Africa, Asia, Europe, the Americas, Islands, and Prize Goods. You can interact with the graph by hovering over sections to see detailed data for each year and country. Additionally, the legend is interactive, allowing you to isolate specific countries from the view when you click on them.</p>
             <div style="font-family: Arial, sans-serif; margin-left: 1rem; margin-bottom: 1rem;">
                 <h3>Color Key for Charts Below</h3>
                 <ul style="list-style-type: none; padding: 0;">
@@ -68,7 +67,7 @@
                   <li><span style="background-color: #ffc6c1; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Islands (various shades)</li>
                   <li><span style="background-color: #277da1; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Prize Goods</li>
                 </ul>
-              </div>
+            </div>
             <div id="imports">
                 <iframe src="Other Graphs/Imports.html"></iframe>
             </div>
@@ -79,17 +78,20 @@
                 <iframe src="Other Graphs/Re-Exports.html"></iframe>
             </div>
 
-            <p>Example text for the Net Trade 1 graph.</p>
+            <h2>Net Trade 1 Graph Analysis</h2>
+            <p>This graph provides a detailed view of the net trade balance between the UK and other countries. It visualizes the flow of goods and highlights significant trade partners.</p>
             <div id="net-trade-1">
                 <iframe src="Other Graphs/Net Trade 1.html"></iframe>
             </div>
 
-            <p>Example text for the 2D Mean Net Trade graph.</p>
+            <h2>2D Mean Net Trade Overview</h2>
+            <p>This visual representation offers an average view of net trade over the years, helping identify consistent trade patterns and trends across different regions.</p>
             <div id="mean-net-trade">
                 <iframe src="Other Graphs/2D Mean Net Trade.html"></iframe>
             </div>
-            
-            <p>Example text for the 2D Net Trade graph.</p>
+
+            <h2>2D Net Trade Insights</h2>
+            <p>Explore the dynamics of trade with this graph, which focuses on the year-by-year changes in net trade, showcasing fluctuations and key trade events.</p>
             <div id="net-trade">
                 <iframe src="Other Graphs/2D Net Trade.html"></iframe>
             </div>
@@ -100,7 +102,6 @@
             <h2>Contact</h2>
             <p>Email: <a href="mailto:edmond.smith@manchester.ac.uk">edmond.smith@manchester.ac.uk</a></p>
             <p>Email: <a href="mailto:james.chattock@gmail.com">james.chattock@gmail.com</a></p>
-            <p><a href="path/to/Customs_data_for_James.xlsx" download>Data</a></p>
         </section>
     </footer>
     <script src="script.js"></script>
