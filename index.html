@@ -25,8 +25,8 @@
         </section>
 
         <section id="analysis">
-            <h2>Net Trade Flow Visualization</h2>
-            <p>This graph shows the net trade flow from the UK to various countries. Blue lines represent exports (positive trade), while red lines indicate imports (negative trade). The thickness and color intensity of the lines correspond to the trade value magnitude. Hover over the end of the lines to see more clearly the name of the line. The legend is interactive: if you click a country once, it removes that country. Double-clicking will highlight and isolate it from the others</p>
+            <h2>Net Trade Flow Visualisation</h2>
+            <p>This graph shows the net trade flow from the UK to various countries. Blue lines represent a positive trade balance, while red lines indicate a negative trade balance. The thickness and color intensity of the lines correspond to the trade value magnitude. Hover over the end of the lines to see more clearly the name of the line. The legend is interactive: if you click a country once, it removes that country. Double-clicking will highlight and isolate it from the others.</p>
 
             <label for="map-select">Select Year for Map:</label>
             <select id="map-select">
@@ -35,7 +35,8 @@
                 <iframe id="mapIframe" src="Maps/1699.html"></iframe>
             </div>
             
-            <p>Example text for the Bar Chart analysis.</p>
+            <h2>Net Trade Bar Chart</h2>
+            <p>This bar chart displays the net trade from the UK to various countries for a selected year. Each bar represents a country, with its height indicating the export value. The colors correspond to different regions, as shown in the legend. You can hover over the bars to see detailed export values.</p>
             <div style="font-family: Arial, sans-serif; margin-left: 1rem; margin-bottom: 1rem;">
                 <h3>Color Key for Charts Below</h3>
                 <ul style="list-style-type: none; padding: 0;">
@@ -54,17 +55,25 @@
                 <iframe id="yearlyIframe" src="Bar_Chart/1699.html"></iframe>
             </div>
 
-            <p>Example text for the Imports graph.</p>
+            <h2>Steamgraphs of Imports, Exports and Re-exports</h2>
+            <p><p>This steamgraph visualises the import data from the UK to various countries over time. Each layer represents a country, with the height of the layer indicating the volume of imports. The graph uses colour to differentiate between regions, including Africa, Asia, Europe, the Americas, Islands, and Prize Goods. You can interact with the graph by hovering over sections to see detailed data for each year and country. Additionally, the legend is interactive, allowing you to isolate specific countries from the view when you click on them.</p></p>
+            <div style="font-family: Arial, sans-serif; margin-left: 1rem; margin-bottom: 1rem;">
+                <h3>Color Key for Charts Below</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                  <li><span style="background-color: #f9844a; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Africa</li>
+                  <li><span style="background-color: #f9c74f; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Asia</li>
+                  <li><span style="background-color: #43aa8b; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Europe (various shades)</li>
+                  <li><span style="background-color: #add8e6; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Americas (various shades)</li>
+                  <li><span style="background-color: #ffc6c1; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Islands (various shades)</li>
+                  <li><span style="background-color: #277da1; padding: 5px; margin-right: 10px;">&nbsp;&nbsp;&nbsp;&nbsp;</span>Prize Goods</li>
+                </ul>
+              </div>
             <div id="imports">
                 <iframe src="Other Graphs/Imports.html"></iframe>
             </div>
-
-            <p>Example text for the Exports graph.</p>
             <div id="exports">
                 <iframe src="Other Graphs/Exports.html"></iframe>
             </div>
-
-            <p>Example text for the Re-Exports graph.</p>
             <div id="re-exports">
                 <iframe src="Other Graphs/Re-Exports.html"></iframe>
             </div>
