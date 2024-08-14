@@ -3,15 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const mapDropdown = document.getElementById('map-select');
     const dataTypeDropdown = document.getElementById('data-type-select');
     const barDataTypeDropdown = document.getElementById('bar-data-type-select');
+    const steamgraphTypeDropdown = document.getElementById('steamgraph-type-select');
     const yearlyIframe = document.getElementById('yearlyIframe');
     const mapIframe = document.getElementById('mapIframe');
+    const steamgraphIframe = document.getElementById('steamgraphIframe');
     
     const iframes = [
         yearlyIframe,
         mapIframe,
-        document.querySelector('#imports iframe'),
-        document.querySelector('#exports iframe'),
-        document.querySelector('#re-exports iframe'),
+        steamgraphIframe,
         document.querySelector('#net-trade-1 iframe'),
         document.querySelector('#mean-net-trade iframe'),
         document.querySelector('#net-trade iframe')
@@ -55,6 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mapDropdown.addEventListener('change', updateMapIframeSrc);
     dataTypeDropdown.addEventListener('change', updateMapIframeSrc);
+
+    // Update steamgraph iframe src when data type changes
+    const updateSteamgraphIframeSrc = () => {
+        const selectedDataType = steamgraphTypeDropdown.value;
+        steamgraphIframe.src = `Other Graphs/Steamgraphs/${selectedDataType}.html`;
+    };
+
+    steamgraphTypeDropdown.addEventListener('change', updateSteamgraphIframeSrc);
 
     // Adjust iframe height periodically
     const adjustIframeHeight = (iframe) => {

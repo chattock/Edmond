@@ -43,8 +43,8 @@
                 <iframe id="mapIframe" src="Maps/Net_Trade/1699.html"></iframe>
             </div>
 
-            <h2>Net Trade Bar Chart</h2>
-            <p>This bar chart displays the net trade from the UK to various countries for a selected year. Each bar represents a country, with its height indicating the export value. The colors correspond to different regions, as shown in the legend. You can hover over the bars to see detailed export values.</p>
+            <h2>Bar Chart</h2>
+            <p>This bar chart displays the trade from the UK to various countries for a selected year. Each bar represents a country, with its height indicating the export value. The colors correspond to different regions, as shown in the legend. You can hover over the bars to see detailed export values.</p>
             <div class="centered">
                 <h3>Color Key for Charts Below</h3>
                 <ul style="list-style-type: none; padding: 0;">
@@ -72,34 +72,37 @@
                 <iframe id="yearlyIframe" src="Bar_Chart/Net_Trade/1699.html"></iframe>
             </div>
 
-            <h2>Steamgraphs of Imports, Exports and Re-exports</h2>
+            <h2>Steamgraphs</h2>
             <p>This steamgraph visualises the import data from the UK to various countries over time. Each layer represents a country, with the height of the layer indicating the volume of imports. The graph uses colour to differentiate between regions, including Africa, Asia, Europe, the Americas, Islands, and Prize Goods. You can interact with the graph by hovering over sections to see detailed data for each year and country. Additionally, the legend is interactive, allowing you to isolate specific countries from the view when you click on them.</p>
+            
+
+            <label for="steamgraph-type-select">Select Data Type for Steamgraph:</label>
+            <select id="steamgraph-type-select">
+                <option value="Imports">Imports</option>
+                <option value="Exports">Exports</option>
+                <option value="Re-Exports">Re-Exports</option>
+            </select>
+            
             <div id="imports">
-                <iframe src="Other Graphs/Imports.html"></iframe>
-            </div>
-            <div id="exports">
-                <iframe src="Other Graphs/Exports.html"></iframe>
-            </div>
-            <div id="re-exports">
-                <iframe src="Other Graphs/Re-Exports.html"></iframe>
+                <iframe id="steamgraphIframe" src="Other Graphs/Steamgraphs/Imports.html"></iframe>
             </div>
 
             <h2>Net Trade 1 Graph Analysis</h2>
             <p>This graph provides a detailed view of the net trade balance between the UK and other countries. It visualizes the flow of goods and highlights significant trade partners.</p>
             <div id="net-trade-1">
-                <iframe src="Other Graphs/Net Trade 1.html"></iframe>
+                <iframe src="Other Graphs/3D/Net Trade 1.html"></iframe>
             </div>
 
             <h2>2D Mean Net Trade Overview</h2>
             <p>This visual representation offers an average view of net trade over the years, helping identify consistent trade patterns and trends across different regions.</p>
             <div id="mean-net-trade">
-                <iframe src="Other Graphs/2D Mean Net Trade.html"></iframe>
+                <iframe src="Other Graphs/2D mean/2D Mean Net Trade.html"></iframe>
             </div>
 
             <h2>2D Net Trade Insights</h2>
             <p>Explore the dynamics of trade with this graph, which focuses on the year-by-year changes in net trade, showcasing fluctuations and key trade events.</p>
             <div id="net-trade">
-                <iframe src="Other Graphs/2D Net Trade.html"></iframe>
+                <iframe src="Other Graphs/2D/2D Net Trade.html"></iframe>
             </div>
         </section>
     </main>
