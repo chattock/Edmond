@@ -84,8 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (e) {
                 console.error("Error adjusting iframe height: ", e);
             }
-        }, 1000);
+        }, );
     };
-
     iframes.forEach(adjustIframeHeight);
 });
