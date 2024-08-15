@@ -184,5 +184,6 @@
   align-items: center;
   flex-direction: column;
   font-family: Arial, sans-serif;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
