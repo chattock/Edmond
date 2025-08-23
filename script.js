@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set default selection
     yearlyDropdown.value = 1699;
     mapDropdown.value = 1699;
+    lineGraphTypeDropdown.value = '2D'; // default to 2D
 
     // Update iframe src when yearly dropdown or data type changes
     const updateYearlyIframeSrc = () => {
@@ -74,6 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     lineGraphTypeDropdown.addEventListener('change', updateLineGraphIframeSrc);
     lineGraphDataTypeDropdown.addEventListener('change', updateLineGraphIframeSrc);
+
+    // Ensure initial line graph reflects 2D default
+    updateLineGraphIframeSrc();
 
     // Adjust iframe height periodically
     const adjustIframeHeight = (iframe) => {

@@ -22,11 +22,10 @@
     <main>
         <section id="about">
             <h2>About</h2>
-            <p>This project explores the detailed records of British imports and exports from 1699 to 1770. By digitizing these extensive ledgers, we provide a nuanced analysis of historical trade data, highlighting the differences in trade between the UK and specific markets globally. The aim of this website is to offer a comprehensive, accessible view of past trade dynamics, enabling users to discover unique patterns and insights. The data was collected from The <a href="https://discovery.nationalarchives.gov.uk/details/r/C5580/">National Archives</a> and can be accessed in Excel format <a href="Customs data for James.xlsx" download>here</a>.</p>
+            <p>This project uses digitised British customs ledgers from the eighteenth century (National Archives series <a href="https://discovery.nationalarchives.gov.uk/details/r/C5580/" target="_blank" rel="noopener">CUST 3</a>). There are 82 volumes from 1696 to 1780. They record goods imported and exported at the Port of London and other ports. They note type and quantity, origin and destination, whether goods were English manufacture or foreign, and whether ships were English or foreign. These tables were written by hand, and had not been converted into a digital format until now. To access the full dataset, please contact Edmond Smith with his email linked <a href="#contact">here</a>. The visuals below aim to make the source easier to read and explore. By visualising this dataset, we can see broad patterns in trade, shipping, and demand.</p>
         </section>
         <section id="analysis">
-            <h2>Globe Visualisation</h2>
-            <p>This graph shows the net trade flow from the UK to various countries. Blue lines represent a positive trade balance, while red lines indicate a negative trade balance. The thickness and color intensity of the lines correspond to the trade value magnitude. Hover over the end of the lines to see more clearly the name of the line. The legend is interactive: if you click a country once, it removes that country. Double-clicking will highlight and isolate it from the others.</p>
+            <p><strong>Global Flow Map.</strong> The globe shows net trade links as arcs. Colour shows direction (blue is a surplus to Britain, red is a deficit). Line width and opacity show scale. You can hover to see names and values. The legend lets you turn groups on and off or isolate one. This joins many small ledger entries into a single view of routes and changing flows.</p>
 
             <label for="map-select">Select Year for Map:</label>
             <select id="map-select"></select>
@@ -55,8 +54,7 @@
                 </ul>
             </div>
 
-            <h2>Bar Chart</h2>
-            <p>This bar chart displays the trade from the UK to various countries for a selected year. Each bar represents a country, with its height indicating the export value. The colors correspond to different regions, as shown in the legend. You can hover over the bars to see detailed export values.</p>
+            <p><strong>Annual Composition Snapshot.</strong> The bar chart shows one year at a time. Each bar is a place. Height shows the chosen measure. Colour groups broad regions so you can see shifts in balance between Atlantic, European, Asian, African, and prize goods. It mimics opening one volume at one year while still letting you move quickly across time.</p>
 
             <label for="yearly-select">Select Year for Bar Chart:</label>
             <select id="yearly-select"></select>
@@ -73,9 +71,7 @@
                 <iframe id="yearlyIframe" src="Bar_Chart/Net_Trade/1699.html"></iframe>
             </div>
 
-            <h2>Steamgraphs</h2>
-            <p>This steamgraph visualises the import data from the UK to various countries over time. Each layer represents a country, with the height of the layer indicating the volume of imports. The graph uses colour to differentiate between regions, including Africa, Asia, Europe, the Americas, Islands, and Prize Goods. You can interact with the graph by hovering over sections to see detailed data for each year and country. Additionally, the legend is interactive, allowing you to isolate specific countries from the view when you click on them.</p>
-            
+            <p><strong>Layered Temporal Stream.</strong> The stream view stacks yearly totals. Thickness shows volume. Changes in shape show how groups grew or shrank. Because the source splits English manufacture, foreign goods, and carriage by flag, the layers can reveal turning points such as growth of re export trade or new regional weight that is hard to spot in the raw tables.</p>
 
             <label for="steamgraph-type-select">Select Data Type for Steamgraph:</label>
             <select id="steamgraph-type-select">
@@ -88,13 +84,12 @@
                 <iframe id="steamgraphIframe" src="Other Graphs/Steamgraphs/Imports.html"></iframe>
             </div>
 
-            <h2>Line Graphs</h2>
-            <p>These graphs provide a comprehensive view of the net trade balance between the UK and other countries. You can select between 3D, 2D, and 2D mean visualizations. The 3D graph includes both the line plot and a trend line for deeper analysis. The legend is interactive: clicking a country once will add or remove it from the view, while double-clicking isolates it from others, making it easier to focus on specific data.</p>
+            <p><strong>Trend Lines and Comparison.</strong> The line views (3D, 2D, and a smoothed mean) show direction and swings across years. They help pick out war years, policy shifts, bullion movements, or sudden market change. The legend lets you hide minor partners or focus on one path. The mean view softens sharp annual spikes that can come from valuation or reporting variation in the manuscripts so you can see the longer pattern.</p>
             
             <label for="line-graph-type-select">Select Graph Type:</label>
             <select id="line-graph-type-select">
                 <option value="3D">3D</option>
-                <option value="2D">2D</option>
+                <option value="2D" selected>2D</option>
                 <option value="2D mean">2D mean</option>
             </select>
 
@@ -107,7 +102,7 @@
             </select>
             
             <div id="net-trade-1">
-                <iframe id="lineGraphIframe" src="Other Graphs/3D/Net_Trade.html"></iframe>
+                <iframe id="lineGraphIframe" src="Other Graphs/2D/Net_Trade.html"></iframe>
             </div>
 
         </section>
